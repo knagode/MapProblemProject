@@ -22,13 +22,24 @@
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkA-YK-c0m">
                                 <rect key="frame" x="506" y="542" width="78" height="38"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.39463358840000001" green="0.90962660309999999" blue="0.14034610589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="0MF-E5-cj2"/>
                                     <constraint firstAttribute="width" constant="78" id="Erw-jO-tGO"/>
+                                    <constraint firstAttribute="height" constant="38" id="e08-t0-PJ7"/>
+                                    <constraint firstAttribute="height" constant="38" id="kF5-7q-VqB"/>
+                                    <constraint firstAttribute="width" constant="78" id="urg-cj-0gS"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="ZOOM">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0MF-E5-cj2"/>
+                                        <exclude reference="Erw-jO-tGO"/>
+                                        <exclude reference="e08-t0-PJ7"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonPressedHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qim-dl-5Wd"/>
                                 </connections>
@@ -38,12 +49,17 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="KkA-YK-c0m" secondAttribute="bottom" constant="20" symbolic="YES" id="0k3-L3-v8y"/>
                             <constraint firstItem="Qrc-Ff-60O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MfX-HL-4v2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KkA-YK-c0m" secondAttribute="bottom" constant="20" id="NxF-S9-IFi"/>
                             <constraint firstItem="Qrc-Ff-60O" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="O77-4a-yWt"/>
-                            <constraint firstItem="KkA-YK-c0m" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="U0d-Jp-fDo"/>
                             <constraint firstItem="Qrc-Ff-60O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uf4-C4-M2a"/>
                             <constraint firstAttribute="trailing" secondItem="Qrc-Ff-60O" secondAttribute="trailing" id="ej7-Zc-JUA"/>
-                            <constraint firstItem="KkA-YK-c0m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="522" id="rvd-ke-S7A"/>
+                            <constraint firstItem="KkA-YK-c0m" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fRP-Jb-PWH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0k3-L3-v8y"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Qrc-Ff-60O" id="dnm-kT-6aa"/>
